@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/project_navigation">
+
+    <fragment
+        android:id="@+id/onBoardingScreen"
+        android:name="com.applaunch.onBoarding.OnBoardingScreen"
+        android:label="AppLaunch">
+        <action
+            android:id="@+id/action_onBoardingScreen_to_loginScreen"
+            app:destination="@id/loginScreen"
+            app:enterAnim="@anim/enter_from_right"
+            app:exitAnim="@anim/exit_to_left"
+            app:popEnterAnim="@anim/enter_from_left"
+            app:popExitAnim="@anim/exit_to_right" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/loginScreen"
+        android:name="com.applaunch.LoginFragment"
+        android:label="AppLaunch">
+        <action
+            android:id="@+id/action_loginScreen_to_userListFragment"
+            app:destination="@id/userListFragment"
+            app:enterAnim="@anim/enter_from_right"
+            app:exitAnim="@anim/exit_to_left"
+            app:popEnterAnim="@anim/enter_from_right"
+            app:popUpTo="@id/loginScreen" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/userListFragment"
+        android:name="com.applaunch.user.UserListFragment"
+        android:label="Users">
+        <action
+            android:id="@+id/action_userListFragment_to_userFormFragment"
+            app:destination="@id/userFormFragment"
+            app:enterAnim="@anim/enter_from_right"
+            app:exitAnim="@anim/exit_to_left"
+            app:popEnterAnim="@anim/enter_from_right"
+            app:popExitAnim="@anim/exit_to_right" />
+
+        <action
+            android:id="@+id/action_userListFragment_to_weatherFragment"
+            app:destination="@id/weatherFragment"
+            app:enterAnim="@anim/enter_from_right"
+            app:exitAnim="@anim/exit_to_left"
+            app:popEnterAnim="@anim/enter_from_right"
+            app:popExitAnim="@anim/exit_to_right" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/userFormFragment"
+        android:name="com.applaunch.userForm.UserFormFragment"
+        android:label="User Details">
+    </fragment>
+
+    <fragment
+        android:id="@+id/weatherFragment"
+        android:name="com.applaunch.weather.WeatherFragment"
+        android:label="Weather details" />
+</navigation>

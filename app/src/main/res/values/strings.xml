@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">AppLaunch</string>
+    <string name="app_launch">App Launch</string>
+    <string name="lorem_lop">Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs.</string>
+    <string name="login">Login</string>
+    <string name="user_name">Username</string>
+    <string name="password">Password</string>
+    <string name="firstName">First Name</string>
+    <string name="email">Email</string>
+    <string name="lastName">Last Name</string>
+    <string name="save">Save</string>
+    <string name="no_data_found">No data found</string>
+    <string name="temperature">Temperature:</string>
+    <string name="weatherType">Weather Type</string>
+    <string name="humidity">Humidity</string>
+    <string name="windSpeed">Wind Speed</string>
+    <string name="warning">Warning</string>
+    <string name="are_you_sure_you_want_to_logout">Are you sure, you want to logout?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+</resources>
