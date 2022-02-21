@@ -33,7 +33,8 @@ class UserListAdapter(val userList: ArrayList<User>, val callback: CallBack): Re
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val user = userList[position]
         holder.fullName.text = "${user.firstName} ${user.lastName}"
-        holder.profileImage.setImageBitmap(getRoundedShape(getBitmapFromUri(Uri.parse(user.image), context)))
+        if(!user.image.isNullOrBlank())
+            holder.profileImage.setImageBitmap(getRoundedShape(getBitmapFromUri(Uri.parse(user.image), context)))
         holder.emailId.text = user.email
         holder.mainLayout.setOnClickListener {
             callback.openWeather()
